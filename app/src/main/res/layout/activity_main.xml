@@ -4,63 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.ll.MainActivity">
+    tools:context="com.example.administrator.ll.MainActivity"
+    android:background="@color/white">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:text="微信"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_height="56dp"
-        android:layout_width="0dp"
-        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="412dp"
+        tools:layout_editor_absoluteY="1dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
+        android:layout_marginEnd="8dp"
+        android:background="?attr/colorPrimary"
+
+        app:layout_constraintHorizontal_bias="0.181">
 
     </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:text="微信"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/titlename"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <LinearLayout
         android:layout_width="368dp"
         android:layout_height="60dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp">
+        app:layout_constraintLeft_toLeftOf="parent">
 
         <ImageView
             android:id="@+id/imageButton4"
             android:layout_width="50dp"
             android:layout_height="40dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            app:srcCompat="@drawable/weixin_pressed"
             android:scaleType="fitCenter"
-            android:layout_gravity="bottom"/>
+            app:srcCompat="@drawable/weixin_pressed" />
 
         <ImageView
             android:id="@+id/imageButton2"
             android:layout_width="50dp"
             android:layout_height="40dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            app:srcCompat="@drawable/contact_list_normal"
             android:scaleType="fitCenter"
-            android:layout_gravity="bottom"/>
+            app:srcCompat="@drawable/contact_list_normal" />
 
         <ImageView
             android:id="@+id/imageButton3"
             android:layout_width="50dp"
             android:layout_height="40dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            app:srcCompat="@drawable/profile_normal"
             android:scaleType="fitCenter"
-            android:layout_gravity="bottom"/>
+            app:srcCompat="@drawable/profile_normal" />
 
     </LinearLayout>
 
